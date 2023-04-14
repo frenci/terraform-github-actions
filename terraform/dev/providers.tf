@@ -1,12 +1,10 @@
-provider "aws" {
-  region              = "us-east-1"
-  allowed_account_ids = [var.allowed_account_id]
+terraform {
+  required_version = ">= 1.0"
 
-  default_tags {
-    tags = {
-      Environment = "dev"
-      ManagedBy   = "terraform"
-      Repo        = "https://github.com/walkerab/terraform-plus-github-actions"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.53"
     }
   }
 }
