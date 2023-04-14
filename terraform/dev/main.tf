@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example_bucket" {
-  bucket = "example-bucket-frencirama-123"
+  bucket = "example-bucket-frencirama-123sfkflaskhflahlak"
   acl    = "private"
 
   tags = {
